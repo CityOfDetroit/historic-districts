@@ -44,14 +44,4 @@ import Controller from './components/controller.class';
     controller.panel.clearPanel();
     document.querySelector('.data-panel.active').className = 'data-panel';
   });
-  const startingBtns = document.querySelectorAll('#user-type-section button');
-  startingBtns.forEach(function (btn) {
-    btn.addEventListener('click', function (ev) {
-      controller.initialForm(ev.target.attributes[2].nodeValue, controller);
-    });
-  });
-  const reloadPage = function reloadPage() {
-    window.location.reload(true);
-  };
-  document.getElementById('logo').addEventListener('click', reloadPage);
 })(window);

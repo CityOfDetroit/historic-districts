@@ -35669,18 +35669,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     controller.panel.clearPanel();
     document.querySelector('.data-panel.active').className = 'data-panel';
   });
-  const startingBtns = document.querySelectorAll('#user-type-section button');
-  startingBtns.forEach(function (btn) {
-    btn.addEventListener('click', function (ev) {
-      controller.initialForm(ev.target.attributes[2].nodeValue, controller);
-    });
-  });
-
-  const reloadPage = function reloadPage() {
-    window.location.reload(true);
-  };
-
-  document.getElementById('logo').addEventListener('click', reloadPage);
 })(window);
 },{"./components/controller.class":"components/controller.class.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -35709,7 +35697,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50599" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60208" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
