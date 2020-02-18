@@ -18,6 +18,7 @@ export default class Panel {
             <h2>${data.properties.Name}</h2>
             <p><strong>Section:</strong> ${data.properties.Section}</p>
             <p><strong>Year Enacted:</strong> ${moment(data.properties.Year_Enacted).format('MMMM Do, YYYY')}</p>
+            ${(data.properties.Report_Link != "n/a") ? `<p><a href="${data.properties.Report_Link}" target="_blank">Download Report</a></p>` : ``}
         `;
         
         return html;

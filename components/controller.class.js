@@ -92,8 +92,6 @@ export default class Controller {
   }
 
   updatePanel(ev, controller){
-    console.log(ev);
-    console.log(this.panel);
     this.panel.buildPanel(ev);
   }
 
@@ -113,7 +111,6 @@ export default class Controller {
     fetch(url)
     .then((resp) => resp.json())
     .then(function (data) {
-      console.log(data);
       if (data.features.length) {
         const patrol = data.features[0].properties.name.split(' ').join('+');
         document.getElementById('sheet-link').href = `https://app.smartsheet.com/b/form/f004f42fcd4345b89a35049a29ff408a?Patrol+ID=${data.features[0].properties.FID}&Patrol+Name=${patrol}`;
