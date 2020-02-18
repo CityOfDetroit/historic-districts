@@ -1,3 +1,6 @@
+import './node_modules/mapbox-gl/dist/mapbox-gl.css';
+import './node_modules/@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
+import './sass/styles.scss';
 import Controller from './components/controller.class';
 
 (function start() {
