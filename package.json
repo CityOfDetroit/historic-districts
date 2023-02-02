@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/CityOfDetroit/historic-districts-#readme",
   "dependencies": {
-    "@mapbox/mapbox-gl-geocoder": "^4.5.1",
+    "@mapbox/mapbox-gl-geocoder": "^4.7.4",
     "@turf/simplify": "^5.1.5",
     "mapbox-gl": "^1.7.0",
     "moment": "^2.24.0",
